@@ -38,7 +38,9 @@ module.exports = {
     binance_testnet: {
       url: API_URL,
       allowUnlimitedContractSize: true,
-      accounts: [`0x${PRIVATE_KEY}`]
+      accounts: [`0x${PRIVATE_KEY}`],
+      gas: 6000000000000000,
+      gasPrice: 60000000000,
     }
   },
   etherscan: {
@@ -46,4 +48,4 @@ module.exports = {
       bscTestnet :"Z6I6T31HFWKTBNB476KTM87ANWCS4MK8FS",
     }
   }
-};
+}
